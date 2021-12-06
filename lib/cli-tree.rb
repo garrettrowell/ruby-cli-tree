@@ -42,7 +42,7 @@ class TreeNode
       child_lines = child.render
       if index < @children.size - 1
         child_lines.each_with_index do |line, idx|
-          prefix = (idx == 0) ? "├── " : "|   "
+          prefix = (idx == 0) ? "├── " : "│   "
           lines << "#{prefix}#{line}"
         end
       else
